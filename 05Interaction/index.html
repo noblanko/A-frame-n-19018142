@@ -28,13 +28,13 @@
         animation__mouseenter="
           property: components.material.material.color; 
           type: color; 
-          to: blue; 
+          to: white; 
           startEvents: mouseenter; 
           dur: 500;"
         animation__mouseleave="
           property: components.material.material.color; 
           type: color; 
-          to: red; 
+          to: black; 
           startEvents: mouseleave; 
           dur: 500;">  
       </a-box>
@@ -45,7 +45,19 @@
         height="1" 
         depth="1" 
         material="src: #wood"
-        shadow>  
+        shadow
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: black; 
+          startEvents: mouseenter; 
+          dur: 700;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: white; 
+          startEvents: mouseleave; 
+          dur: 700;">  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
@@ -54,7 +66,19 @@
         height="100" 
         color="#7BC8A4" 
         material="src: #grass; repeat: 10 10"
-        shadow>
+        shadow
+        animation__mouseenter="
+          property: components.material.material.color; 
+          type: color; 
+          to: #1E3C00; 
+          startEvents: mouseenter; 
+          dur: 2000;"
+        animation__mouseleave="
+          property: components.material.material.color; 
+          type: color; 
+          to: #4BB462; 
+          startEvents: mouseleave; 
+          dur: 1000;">>
       </a-plane> 
     </a-scene>
   </body>
